@@ -1,0 +1,42 @@
+body{
+	background-color: #999999;
+}
+
+h3{
+	color: #444444;
+}
+
+#topo{
+	background-color: #f3f3f3;
+	height: 60px;
+}
+
+#banner{
+	background-color: #f3f3f3;
+	height: 300px;
+}
+
+#card1{
+	background-color: #f3f3f3;
+	height: 250px;
+}
+
+#card2{
+	background-color: #f3f3f3;
+	height: 250px;
+}
+
+#card3{
+	background-color: #f3f3f3;
+	height: 250px;
+}
+
+#formulario{
+	background-color: #f3f3f3;
+	padding-left: 30px;
+}
+
+#resultados{
+	background-color: #f3f3f3;
+	padding-left: 30px;
+}

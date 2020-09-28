@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição Cliete</title>
+
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!--CSS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+    <!--SCRIPTS BOOTSTRAP-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="topo" class="col-12 h100">
+                <div class="col-sm"><!-- Barra Superior -->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=" #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Sistema<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cadastrar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="cadCliente.html">Cliente</a>
+                            <a class="dropdown-item" href="cadFuncionario.html">Funcionarios</a>
+                            <a class="dropdown-item" href="cadFornecedor.html">Fornecedores</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Consultar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="consCliente.html">Cliente</a>
+                            <a class="dropdown-item" href="consFuncionario.html">Funcionarios</a>
+                            <a class="dropdown-item" href="consFornecedor.html">Fornecedores</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Editar
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="editCliente.html">Cliente</a>
+                            <a class="dropdown-item" href="editFuncionarios.html">Funcionarios</a>
+                            <a class="dropdown-item" href="editFornecedor.html">Fornecedores</a>
+                        </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Excluir
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="delCliente.html">Cliente</a>
+                            <a class="dropdown-item" href="delFuncionario.html">Funcionarios</a>
+                            <a class="dropdown-item" href="delFornecedor.html">Fornecedores</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div id="formulario" class="col-12">
+                <form class="my-4" align="left">
+                    <div class="form-group row">
+                        <label for="id" class="col-sm-2 col-form-label">ID:</label>
+                        <div class="col-10 col-md-10">
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            <button type="submit" class="btn btn-primary">Editar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" align="center">
+            <div id="formulario" class="col-12">
+                <h3>EDITAR FUNCIONÁRIOS:</h3>
+                <form class="my-4" align="left">
+                    <div class="form-group row">
+                        <label for="nome" class="col-sm-2 col-form-label">Nome:</label>
+                        <div class="col-10 col-md-10">
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="endereco" class="col-sm-2 col-form-label">Endereço:</label>
+                        <div class="col-10 col-md-10">
+                            <input type="text" class="form-control" id="endereco">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bairro" class="col-sm-2 col-form-label">Bairro:</label>
+                        <div class="col-10 col-md-3">
+                            <input type="text" class="form-control" id="bairro">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cep" class="col-sm-2 col-form-label">CEP:</label>
+                        <div class="col-10 col-md-3">
+                            <input type="text" class="form-control" id="cep">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cidade" class="col-sm-2 col-form-label">Cidade:</label>
+                        <div class="col-10 col-md-3">
+                            <input type="text" class="form-control" id="cidade">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="estado" class="col-sm-2 col-form-label">Estado:</label>
+                        <div class="col-10 col-md-3">
+                            <select name="estado" class="form-control">
+                                <option>SP</option>
+                            </select>
+                        </div>
+                    </div>
+                    <fieldset class="form-group">
+                        <div class="row">
+                            <legend class="col-form-label col-sm-2 pt-0">Sexo:</legend>
+                            <div class="col-sm-10">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexoFeminino" id="sexo" value="Feminino">
+                                    <label for="sexo" class="form-check-label">Feminino</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="sexoFeminino" id="sexo" value="Feminino">
+                                    <label for="sexo" class="form-check-label">Masculino</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-2">Dados:</div>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dados">
+                                <label for="dados" class="form-check-label">
+                                    Todos os campos estão devidamente preenchidos
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-10">
+                            <button type="submit" class="btn btn-primary">Concluir</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
